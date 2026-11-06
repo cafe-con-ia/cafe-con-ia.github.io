@@ -819,7 +819,7 @@ function buildMissions(){
   MISSIONS.forEach(function(m){
     var body=h('div',{class:'m-body',id:'mb-'+m.id,hidden:true},m.blocks.map(block));
     var head=h('button',{class:'m-head',type:'button','aria-expanded':'false','aria-controls':'mb-'+m.id},
-      h('span',{class:'m-main'},h('span',{class:'m-ref',text:m.ref}),h('span',{class:'m-title',text:m.title})),
+      h('span',{class:'m-main'},h('span',{class:'m-title',text:m.title})),
       h('span',{class:'m-meta'},ico('bean'),h('span',{class:'cp earn',text:'0/'+m.max}),ico('chev','chev')));
     head.addEventListener('click',function(){toggleMission(m.id);});
     ul.append(h('li',{class:'m',id:'m-'+m.id},head,body));
