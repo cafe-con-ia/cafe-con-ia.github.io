@@ -407,13 +407,12 @@ var PTS={'warm.done':5,'demo.done':5,'t1.done':3,'t2.done':3,'t3.done':3,
   'fa.done':15,'fb.done':15,'fc.done':15,'fd.done':15,
   'fe.public':0,'fe.done':12,'fe.v1':2,'fe.v2':2,'fe.v3':2,'fe.v4':2,'ff.done':12,'ff.v1':4,'ff.v2':4,'chuleta.done':10};
 
-/* ---------- textos de apoyo (ficticios, salvo el extracto del BOA) ---------- */
+/* ---------- textos de apoyo (ficticios, salvo el documento del BOCA) ---------- */
 var MAT_ACTA='ACTA (texto ficticio, creado para esta formación)\nComisión de Educación · Sesión del 12 de mayo de 2026\nAsisten: la presidencia, representantes de los grupos Ribera, Moncayo y Cinca, y la asesoría técnica.\n\n1. Plan de refuerzo de la Formación Profesional. Se aprueba por mayoría, con los votos de Ribera y Moncayo, trasladar el plan al Pleno con una dotación de 12 millones de euros en tres ejercicios. Cinca vota en contra: considera la dotación insuficiente y pide revisar el reparto por provincias. Moncayo condiciona su apoyo final a que se incluya un calendario de seguimiento semestral.\n\n2. Becas de comedor. Se acuerda por unanimidad pedir al Gobierno un informe sobre las solicitudes denegadas el curso pasado, que deberá entregarse antes del 30 de junio. Ribera propone ampliar el umbral de renta; la propuesta queda pendiente de estudio.\n\n3. Ruegos y preguntas. Cinca ruega que se convoque una comparecencia de la consejería. La presidencia responde que se tratará en la próxima reunión de la Mesa.\n\nSe levanta la sesión a las 13:10.';
 var MAT_A='Asunto: Visita con alumnado de 4.º de ESO\n\nBuenos días:\n\nSoy profesora de Geografía e Historia de un instituto de Aragón y quisiera organizar una visita a las Cortes con 48 alumnos de 4.º de ESO y 3 docentes acompañantes. Nos vendría bien un jueves o un viernes de la segunda quincena de marzo, por la mañana.\n\n¿Qué requisitos hay para reservar? ¿Pueden participar alumnos con movilidad reducida? ¿La visita tiene algún coste?\n\nGracias de antemano.\nUn saludo.';
 var MAT_B='Artículo 12. Plazo de presentación de solicitudes.\n1. Las personas interesadas podrán presentar sus solicitudes en el plazo de veinte días hábiles contados a partir del día siguiente al de la publicación de la convocatoria en el boletín oficial correspondiente, sin perjuicio de lo dispuesto en el apartado siguiente.\n2. Cuando la solicitud adolezca de algún defecto o no se acompañe de la documentación preceptiva, se requerirá a la persona interesada para que, en el plazo de diez días hábiles, subsane la falta o acompañe los documentos, con la advertencia de que, si así no lo hiciera, se le tendrá por desistida de su petición, previa resolución dictada en los términos del artículo 21.';
 var MAT_C='- Qué: jornada de puertas abiertas en las Cortes de Aragón.\n- Cuándo: sábado 5 de diciembre de 2026, de 10:00 a 14:00 horas.\n- Dónde: sede de las Cortes de Aragón, Zaragoza.\n- Actividades: visitas guiadas cada 30 minutos en grupos de 25 personas, taller infantil sobre cómo se hace una ley y exposición de documentos históricos.\n- Inscripción: gratuita y obligatoria para las visitas guiadas, en la web de las Cortes.\n- Aforo: 400 personas.';
 var MAT_D='Procedimiento de acreditación para visitas guiadas.\nLa persona interesada presenta la solicitud en el registro. En un plazo de 5 días hábiles, el servicio de atención comprueba que la documentación está completa. Si falta algo, requiere a la persona interesada que lo aporte en 10 días hábiles; si no lo hace, se archiva la solicitud. Con la documentación completa, la Secretaría General resuelve en un máximo de 15 días hábiles. Si no hay resolución en ese plazo, la solicitud se entiende estimada. Contra la resolución cabe recurso de alzada ante la Mesa en el plazo de un mes.';
-var MAT_E='BOLETÍN OFICIAL DE ARAGÓN · 24 de septiembre de 2026 · Número 186\nI. Disposiciones Generales\nCORTES DE ARAGÓN\n\nRESOLUCIÓN de 10 de septiembre de 2026, de las Cortes de Aragón, por la que se ordena la publicación del Acuerdo de convalidación del Decreto-ley 2/2026, de 29 de julio, del Gobierno de Aragón, por el que se aprueban medidas urgentes, entre el 10 y el 13 de agosto, para la prevención y anticipación de emergencias como consecuencia del eclipse total visible en Aragón el 12 de agosto de 2026.\n\nDe conformidad con lo dispuesto en el artículo 44.2 del Estatuto de Autonomía de Aragón, las Cortes de Aragón, en sesión plenaria celebrada los días 10 y 11 de septiembre de 2026, han acordado la convalidación del Decreto-ley 2/2026, de 29 de julio, del Gobierno de Aragón, por el que se aprueban medidas urgentes, entre el 10 y el 13 de agosto, para la prevención y anticipación de emergencias como consecuencia del eclipse total visible en Aragón el 12 de agosto de 2026, publicado en el «Boletín Oficial de Aragón», número 147, de 31 de julio de 2026.\n\nSe ordena la publicación para general conocimiento.\n\nZaragoza, 10 de septiembre de 2026.\nLa Presidenta de las Cortes de Aragón,\nMARÍA NAVARRO VISCASILLAS';
 
 var CHULETA_TEXT=[
 'CHULETA PARA HABLAR CON LA IA · Café con IA · Sesión 4',
@@ -438,7 +437,7 @@ var QUIZ=[
   {id:'q1',t:'Un acta de comisión ya publicada en el BOCA.',a:'si',f:'Es un documento público: puedes pegarlo.'},
   {id:'q2',t:'Un listado de solicitantes de una ayuda, con DNI y domicilio.',a:'no',f:'Son datos personales: no se pegan en una IA externa.'},
   {id:'q3',t:'Un expediente en tramitación que todavía no es público.',a:'no',f:'Si no es público, no es para un tablón ni para una IA externa.'},
-  {id:'q4',t:'El texto de una ley ya publicada en el BOA.',a:'si',f:'Está publicado oficialmente: puedes pegarlo.'},
+  {id:'q4',t:'El texto de un acuerdo de las Cortes ya publicado en el BOCA.',a:'si',f:'Está publicado oficialmente: puedes pegarlo.'},
   {id:'q5',t:'Un informe médico de un trabajador.',a:'no',f:'Son datos de salud, una categoría especial: nunca.'}
 ];
 
@@ -530,21 +529,21 @@ var MISSIONS=[
        'Conviértela en una tabla con las columnas Paso, Qué ocurre, Quién actúa, Plazo y Qué pasa si no se cumple. Usa solo la información del texto y escribe «No indicado» cuando falte un dato.',
        'Una sola tabla y, debajo, una línea con el plazo máximo total si se cumplen todos los plazos, explicando el cálculo.')})},
      {key:'e',title:'Ficha E',sub:'Misión Boletín · 20',blocks:[
-       {t:'p',text:'Aquí practicas con un documento público real: una resolución de las Cortes de Aragón publicada en el Boletín Oficial de Aragón (BOA).'},
+       {t:'p',text:'Aquí practicas con un documento público real: un acuerdo de la Mesa de las Cortes de Aragón publicado en el Boletín Oficial de las Cortes de Aragón (BOCA).'},
        {t:'gate',id:'fe.public',label:'He comprobado que el documento está publicado y es público',blocks:[
-         {t:'material',label:'Documento público (extracto)',text:MAT_E,src:{url:'https://boe.es/ccaa/boa/2026/186/d00001-00001.pdf',label:'Ver el original en el BOA nº 186, 24/09/2026'}},
+         {t:'material',label:'Documento público (enlace)',text:'Acuerdo de la Mesa de las Cortes de Aragón de 15 de octubre de 2026, sobre la Relación de puestos de trabajo de la Cámara de Cuentas de Aragón. BOCA nº 39, de 20 de octubre de 2026 (apartado 12.4, página 3580).\n\nAbre el enlace, busca el apartado 12.4 (Cámara de Cuentas, régimen interior), selecciona su texto, cópialo y pégalo en tu IA después del prompt.',src:{url:'https://bases.cortesaragon.es/bases/original.nsf/(BOCAID)/EC781253ED68AE40C1258E9C002A505C/$File/BOCA_39.pdf?OpenElement=',label:'Abrir el BOCA nº 39 (20/10/2026)'}},
          {t:'prompt',kind:'rctf',label:'Prompt RCTF',parts:RCTF(
            'Actúa como técnico de comunicación de las Cortes de Aragón.',
-           'Te pego una resolución de las Cortes publicada en el Boletín Oficial de Aragón, que es un documento público.',
-           'Explícala para ciudadanos sin formación jurídica: qué se decide, por qué y qué fechas aparecen. No añadas nada que no esté en el texto.',
-           'Máximo 120 palabras, lenguaje claro y tres viñetas.'),mat:MAT_E,matLabel:'DOCUMENTO'},
+           'Te pego un acuerdo de la Mesa de las Cortes publicado en el Boletín Oficial de las Cortes de Aragón (BOCA), que es un documento público.',
+           'Explícalo para ciudadanos sin formación jurídica: qué se decide, qué órganos intervienen y qué fechas aparecen. No añadas nada que no esté en el texto.',
+           'Máximo 120 palabras, lenguaje claro y tres viñetas.')},
          {t:'done',id:'fe.done',pts:12,label:'He ejecutado el prompt'},
          {t:'p',text:'Verifica con el original. Marca solo lo que hayas comprobado. Si la IA ha añadido algo que no está en el texto, anótalo: es justo lo que hay que detectar.'},
          {t:'checks',items:[
-           {id:'fe.v1',label:'El Decreto-ley es el 2/2026, de 29 de julio.',pts:2},
-           {id:'fe.v2',label:'El Pleno lo convalidó los días 10 y 11 de septiembre de 2026.',pts:2},
-           {id:'fe.v3',label:'Las medidas valen del 10 al 13 de agosto y se deben al eclipse del 12 de agosto.',pts:2},
-           {id:'fe.v4',label:'Se publicó en el BOA número 147, de 31 de julio de 2026.',pts:2}]}
+           {id:'fe.v1',label:'Las fechas que menciona coinciden con las del texto.',pts:2},
+           {id:'fe.v2',label:'Los órganos que cita (Mesa, Cámara de Cuentas…) son los que aparecen.',pts:2},
+           {id:'fe.v3',label:'Las cifras o referencias (puestos, apartados, artículos) coinciden con el original.',pts:2},
+           {id:'fe.v4',label:'No ha supuesto nada que el documento no diga.',pts:2}]}
        ]}
      ]},
      {key:'f',title:'Ficha F',sub:'Acta escaneada · imagen · 20',blocks:[
